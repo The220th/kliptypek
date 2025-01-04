@@ -14,6 +14,13 @@ Then focus needed window. There are 3 seconds for this by default, change it wit
 
 # Installation
 
+For `GNU/Linux` some package needed for `pyautogui`:
+
+```bash
+sudo pacman -S tk scrot
+sudo apt install python3-tk scrot
+```
+
 ```bash
 pip3 install --upgrade pip
 pip3 install kliptypek

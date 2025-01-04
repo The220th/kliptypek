@@ -4,6 +4,7 @@ import pyperclip
 import pyautogui
 import argparse
 import time
+import sys
 
 
 def get_unicode_special() -> tuple[str, dict]:
@@ -112,6 +113,7 @@ def process(args: argparse.Namespace):
 
         if args.terminal_duplicate:
             print(sym_i, end="")
+            sys.stdout.flush()
 
     if args.terminal_duplicate:
         print()
